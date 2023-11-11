@@ -5,38 +5,38 @@ const sentences = [
     "prueba",
     "otra prueba"
     // Agrega más oraciones según tu preferencia
-  ];
-  
-  let currentSentenceIndex = 0;
-  let startTime, endTime;
-  
-  function startTest() {
+];
+
+let currentSentenceIndex = 0;
+let startTime, endTime;
+
+function startTest() {
     displaySentence();
     document.getElementById('userInput').value = '';
     document.getElementById('feedback').innerText = '';
     document.getElementById('feedback-container').style.display = 'none';
     startTime = new Date().getTime();
-  }
-  
-  function displaySentence() {
+}
+
+function displaySentence() {
     const sentence = sentences[currentSentenceIndex];
     const sentenceHtml = sentence.split('').map(char => `<span>${char}</span>`).join('');
     document.getElementById('sentence').innerHTML = sentenceHtml;
-  }
-  
-  function checkInput() {
+}
+
+function checkInput() {
     const userInput = document.getElementById('userInput').value;
     const originalSentence = sentences[currentSentenceIndex];
-  
+
     const feedbackContainer = document.getElementById('feedback-container');
     const feedback = document.getElementById('feedback');
-  
+
     const sentenceSpan = document.getElementById('sentence').querySelectorAll('span');
     const userInputArray = userInput.split('');
-  
+
     sentenceSpan.forEach((charSpan, index) => {
         const userChar = userInputArray[index];
-  
+
         if (userChar === undefined) {
             charSpan.classList.remove('correct', 'incorrect');
         } else if (userChar === originalSentence[index]) {
@@ -47,7 +47,7 @@ const sentences = [
             charSpan.classList.add('incorrect');
         }
     });
-  
+
     if (userInput === originalSentence) {
         currentSentenceIndex++;
         if (currentSentenceIndex < sentences.length) {
@@ -64,11 +64,10 @@ const sentences = [
         feedbackContainer.style.display = 'block';
         feedback.innerText = 'Texto incorrecto. Inténtalo de nuevo.';
     }
-  }
-  
-  function focusInput() {
+}
+
+function focusInput() {
     const userInput = document.getElementById('userInput');
     userInput.style.display = 'block';  // Muestra el área de texto
     userInput.focus();
-  }
-  
+}
