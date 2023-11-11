@@ -54,3 +54,12 @@ toggler.addEventListener('change', function () {
         document.body.classList.remove('dark');
     }
 });
+
+function toggleTables(event) {
+    var clickedOrders = event.currentTarget.parentElement;
+    var tables = clickedOrders.querySelectorAll('.table-container');
+
+    tables.forEach(function(table) {
+        table.style.display = (table.style.display === "block") ? "none" : "block";
+    });
+}

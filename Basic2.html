@@ -61,15 +61,15 @@
             <div class="bottom-data">
                 <!-- 4 - A -->
                 <div class="orders">
-                    <div class="header">
+                    <div class="header" onclick="toggleTables(event)">
                         <a href="pdf/Unit 04 Activities - Lesson A.pdf" target="_blank"><i class='bx bx-receipt'></i></a>
                         <h3>Unit 4 - A</h3>
                         <i class='bx bx-filter'></i>
                         <i class='bx bx-search'></i>
                     </div>
-                    <!-- English Spanish -->    
-                    <table>
-                        <thead>                            
+                    <!-- English Spanish -->                        
+                    <table class="table-container">
+                        <thead>
                             <tr>
                                 <th>English</th>
                                 <th>Spanish</th>
@@ -93,8 +93,8 @@
                                 <td>leer</td>
                             </tr>
                             <tr>
-                              <td>outside</td>
-                              <td>afuera</td>
+                                <td>outside</td>
+                                <td>afuera</td>
                             </tr>
                             <tr>
                                 <td>gym</td>
@@ -186,9 +186,10 @@
                             </tr>                            
                         </tbody>
                     </table>
+                    
                     <br>
-                    <!-- Questions Answers -->
-                    <table>
+                    <!-- Questions Answers -->                    
+                    <table class="table-container">
                         <thead>
                             <tr>
                                 <th>Questions</th>
@@ -311,18 +312,19 @@
                             
                         </tbody>
                     </table>
+                    
                 </div>
 
                 <!-- 4 - B -->
                 <div class="orders">
-                    <div class="header">
+                    <div class="header" onclick="toggleTables(event)">
                         <a href="pdf/Unit 04 Activities - Lesson B.pdf" target="_blank"><i class='bx bx-receipt'></i></a>
                         <h3>Unit 4 - B</h3>
                         <i class='bx bx-filter'></i>
                         <i class='bx bx-search'></i>
                     </div>
-                    <!-- English Spanish -->    
-                    <table>
+                    <!-- English Spanish -->
+                    <table class="table-container">
                         <thead>                            
                             <tr>
                                 <th>English</th>
@@ -702,7 +704,7 @@
                     </table>
                     <br>
                     <!-- Questions Answers -->
-                    <table>
+                    <table class="table-container">
                         <thead>
                             <tr>
                                 <th>Questions</th>
@@ -812,14 +814,14 @@
 
                 <!-- 5 - A -->
                 <div class="orders">
-                    <div class="header">
+                    <div class="header" onclick="toggleTables(event)">
                         <a href="pdf/Unit 05 Food - Lesson A.pdf" target="_blank"><i class='bx bx-receipt'></i></a>
                         <h3>Unit 5 - A</h3>
                         <i class='bx bx-filter'></i>
                         <i class='bx bx-search'></i>
                     </div>
                     <!-- English Spanish -->    
-                    <table>
+                    <table class="table-container">
                         <thead>                            
                             <tr>
                                 <th>English</th>
@@ -1304,15 +1306,114 @@
                                 <td>come frutas y verduras</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td>My sister reads a book</td>
+                                <td>mi hermana lee un libro</td>
                             </tr>
-                            
+                            <tr>
+                                <td>Frank likes dogs</td>
+                                <td>a Frank le gustan los perros</td>
+                            </tr>
+                            <tr>
+                                <td>My parents do the shopping</td>
+                                <td>mis padres hacen las compras</td>
+                            </tr>
+                            <tr>
+                                <td>We sometimes meet in front of the cinema</td>
+                                <td>Nosotros aveces nos encontramos frente al cine</td>
+                            </tr>
+                            <tr>
+                                <td>My uncle Jack goes to the doctor's office</td>
+                                <td>Mi tio Jack va al consultorio del medico</td>
+                            </tr>
+                            <tr>
+                                <td>Our friends play soccer in the park</td>
+                                <td>Nuestros amigos juegan futbol en el parque</td>
+                            </tr>
+                            <tr>
+                                <td>She studies Chinese</td>
+                                <td>Ella estudia chino</td>
+                            </tr>
+                            <tr>
+                                <td>Mario rides his bicycle every day</td>
+                                <td>Mario anda en bicicleta todos los días</td>
+                            </tr>
+                            <tr>
+                                <td>I don't eat hamburger</td>
+                                <td>yo no como hamburguesa</td>
+                            </tr>
+                            <tr>
+                                <td>You don't speak Japanese</td>
+                                <td>tú no hablas japones</td>
+                            </tr>
+                            <tr>
+                                <td>We don't drive a car</td>
+                                <td>nosotros no conducimos un carro</td>
+                            </tr>
+                            <tr>
+                                <td>They don't have cellphones</td>
+                                <td>ellos no tienen celulares</td>
+                            </tr>
+                            <tr>
+                                <td>He doesn't sleep in the mornings</td>
+                                <td>él no duerme en la mañana</td>
+                            </tr>
+                            <tr>
+                                <td>She doesn't ride a bike</td>
+                                <td>ella no maneja bicicleta</td>
+                            </tr>
+                            <tr>
+                                <td>It doesn't move fast</td>
+                                <td>No se mueve rápido</td>
+                            </tr>
+                            <tr>
+                                <td>I don't like chicken</td>
+                                <td>No me gusta el pollo</td>
+                            </tr>
+                            <tr>
+                                <td>My sister doesn't eat pasta</td>
+                                <td>Mi hermana no come pasta</td>
+                            </tr>
+                            <tr>
+                                <td>They don't play soccer</td>
+                                <td>No juegan futbol</td>
+                            </tr>
+                            <tr>
+                                <td>We don't buy pizza in the supermarket</td>
+                                <td>No compramos pizza en el supermercado</td>
+                            </tr>
+                            <tr>
+                                <td>My cousin Luis doesn't go to the bank</td>
+                                <td>Mi primo Luis no va al banco</td>
+                            </tr>
+                            <tr>
+                                <td>My parents don't dance at parties</td>
+                                <td>mis padres no bailan en las fiestas</td>
+                            </tr>
+                            <tr>
+                                <td>You don't study Chinese</td>
+                                <td>No estudias chino</td>
+                            </tr>
+                            <tr>
+                                <td>Mario doesn't write poems</td>
+                                <td>Mario no escribe poemas</td>
+                            </tr>
+                            <tr>
+                                <td>Well, I drink orange juice, but I don't drink milk</td>
+                                <td>Bueno, tomo jugo de naranja, pero no bebo leche</td>
+                            </tr>
+                            <tr>
+                                <td>For breakfast, I drink yogurt. I don’t drink coffee</td>
+                                <td>Para el desayuno tomo yogur. No tomo cafe</td>
+                            </tr>
+                            <tr>
+                                <td>In my case, I only drink milk</td>
+                                <td>En mi caso solo tomo leche.</td>
+                            </tr>
                         </tbody>
                     </table>
                     <br>
                     <!-- Questions Answers -->
-                    <table>
+                    <table class="table-container">
                         <thead>
                             <tr>
                                 <th>Questions</th>

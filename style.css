@@ -462,6 +462,22 @@ body{
     border-collapse: collapse;
 }
 
+thead {
+    background-color:#2eb6ff6c;
+}
+
+.orders {
+    cursor: pointer; /* Cambia el cursor al puntero al pasar por encima del div */
+}
+
+.table-container {
+    display: none; /* Oculta la tabla por defecto */
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd50;
+}
+
 .content main .bottom-data .orders table th{
     padding-bottom: 12px;
     font-size: 13px;
