@@ -1,21 +1,17 @@
 const sentences = [
-    "The quick brown fox jumps over the lazy dog.",
-    "Programming is the art of telling another human what one wants the computer to do.",
-    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "prueba",
-    "otra prueba"
-    // Agrega más oraciones según tu preferencia
+    "cheap - expensive",
+"comfortable - uncomfortable",
+"keeps - throws out",
+"messy - clean",
+"easy - hard",
+"important - unimportant",
 ];
 
 let currentSentenceIndex = 0;
-let startTime, endTime;
 
 function startTest() {
     displaySentence();
     document.getElementById('userInput').value = '';
-    document.getElementById('feedback').innerText = '';
-    document.getElementById('feedback-container').style.display = 'none';
-    startTime = new Date().getTime();
 }
 
 function displaySentence() {
@@ -27,9 +23,6 @@ function displaySentence() {
 function checkInput() {
     const userInput = document.getElementById('userInput').value;
     const originalSentence = sentences[currentSentenceIndex];
-
-    const feedbackContainer = document.getElementById('feedback-container');
-    const feedback = document.getElementById('feedback');
 
     const sentenceSpan = document.getElementById('sentence').querySelectorAll('span');
     const userInputArray = userInput.split('');
@@ -54,20 +47,13 @@ function checkInput() {
             displaySentence();
             document.getElementById('userInput').value = '';
         } else {
-            endTime = new Date().getTime();
-            const totalTime = (endTime - startTime) / 1000;
-            const wordsPerMinute = Math.round((sentences.length / totalTime) * 60);
-            feedback.innerText = `¡Prueba completada! Velocidad: ${wordsPerMinute} palabras por minuto.`;
-            feedbackContainer.style.display = 'block';
+            alert('Prueba completada. ¡Buen trabajo!');
         }
-    } else {
-        feedbackContainer.style.display = 'block';
-        feedback.innerText = 'Texto incorrecto. Inténtalo de nuevo.';
     }
 }
 
 function focusInput() {
     const userInput = document.getElementById('userInput');
-    userInput.style.display = 'block';  // Muestra el área de texto
+    userInput.style.display = 'block';
     userInput.focus();
 }
