@@ -15,5 +15,11 @@ def traducir_palabra():
 
     print(f"Traducción al español: {palabra_espanol}")
 
-if __name__ == "__main__":
+if __name__ == "__main__":    
     traducir_palabra()
+    
+for i in range(20):
+    for i in range(20):
+        for i in range(20):
+            for i in range(20):
+                print("hola")
